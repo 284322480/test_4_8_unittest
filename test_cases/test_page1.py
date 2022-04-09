@@ -10,10 +10,10 @@ from selenium.webdriver.edge.service import Service
 
 from time import sleep
 from selenium.webdriver.support.select import Select
-from web_unittest_framwork.objectpage.login_page import LoginPage
-from web_unittest_framwork.config.config import url,driver_path,system_version
-from web_unittest_framwork.data.data import ReadWrite
-from web_unittest_framwork.log.log import loggers
+from git_hub.objectpage.login_page import LoginPage
+from git_hub.config.config import url,driver_path,system_version
+from git_hub.data.data import ReadWrite
+from git_hub.log.log import loggers
 
 class LoginCases(unittest.TestCase):
     #testfixture

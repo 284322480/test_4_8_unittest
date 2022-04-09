@@ -4,7 +4,7 @@
 # File : data.py
 # Desc :
 
-from web_unittest_framwork.config.config import file_path
+from git_hub.config.config import file_path
 class ReadWrite:
     def __init__(self):
         self.txtpath=""

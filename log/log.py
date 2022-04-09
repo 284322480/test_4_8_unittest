@@ -4,7 +4,7 @@
 # File : log.py
 # Desc :
 import logging
-from web_unittest_framwork.config.config import log_file
+from git_hub.config.config import log_file
 #创建日志器
 loggers=logging.getLogger('simple')
 #定义日志器的级别

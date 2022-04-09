@@ -7159,36 +7159,31 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 1,
+    "testPass": 0,
     "testResult": [
         {
-            "className": "LoginCases",
-            "methodName": "test_1",
-            "description": "\n        验证有效地用户名和密码成功登录系统\n        ",
-            "spendTime": "3.78 s",
-            "status": "成功",
+            "className": "_FailedTest",
+            "methodName": "test_page1",
+            "description": null,
+            "spendTime": "0.000999 s",
+            "status": "错误",
             "log": [
-                "登录的第一个测试用例",
-                ""
-            ]
-        },
-        {
-            "className": "LoginCases",
-            "methodName": "test_2",
-            "description": "\n        验证密码为空时登录失败\n        ",
-            "spendTime": "0.0 s",
-            "status": "跳过",
-            "log": [
-                "只有版本号为1.2才执行"
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n",
+                "  File \"D:\\python\\lib\\unittest\\loader.py\", line 34, in testFailure\n    raise self._exception\n",
+                "ImportError: Failed to import test module: test_page1\nTraceback (most recent call last):\n  File \"D:\\python\\lib\\unittest\\loader.py\", line 436, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\python\\lib\\unittest\\loader.py\", line 377, in _get_module_from_name\n    __import__(name)\n  File \"E:\\cheshi\\git_hub\\test_cases\\test_page1.py\", line 16, in <module>\n    from git_hub.log.log import loggers\n  File \"E:\\cheshi\\git_hub\\log\\log.py\", line 16, in <module>\n    fh=logging.FileHandler(log_file,mode='a',encoding='utf-8')\n  File \"D:\\python\\lib\\logging\\__init__.py\", line 1146, in __init__\n    StreamHandler.__init__(self, self._open())\n  File \"D:\\python\\lib\\logging\\__init__.py\", line 1175, in _open\n    return open(self.baseFilename, self.mode, encoding=self.encoding,\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\log\\\\log.txt'\n\n"
             ]
         }
     ],
     "testName": "系统登录的测试报告",
-    "testAll": 2,
-    "testFail": 0,
-    "beginTime": "2022-04-03 10:35:33",
-    "totalTime": "14s",
-    "testSkip": 1,
+    "testAll": 1,
+    "testFail": 1,
+    "beginTime": "2022-04-09 13:21:01",
+    "totalTime": "0s",
+    "testSkip": 0,
     "testError": 0
 };
     function details(obj) {
