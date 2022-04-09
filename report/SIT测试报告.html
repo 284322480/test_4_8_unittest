@@ -7162,27 +7162,32 @@ body.skin-3 {
     "testPass": 0,
     "testResult": [
         {
-            "className": "_FailedTest",
-            "methodName": "test_page1",
-            "description": null,
-            "spendTime": "0.000999 s",
+            "className": "LoginCases",
+            "methodName": "test_1",
+            "description": "\n        验证有效地用户名和密码成功登录系统\n        ",
+            "spendTime": "0.74 s",
             "status": "错误",
             "log": [
-                "",
+                "登录的第一个测试用例\n",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 593, in run\n    self._callTestMethod(testMethod)\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n",
-                "  File \"D:\\python\\lib\\unittest\\loader.py\", line 34, in testFailure\n    raise self._exception\n",
-                "ImportError: Failed to import test module: test_page1\nTraceback (most recent call last):\n  File \"D:\\python\\lib\\unittest\\loader.py\", line 436, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\python\\lib\\unittest\\loader.py\", line 377, in _get_module_from_name\n    __import__(name)\n  File \"E:\\cheshi\\git_hub\\test_cases\\test_page1.py\", line 16, in <module>\n    from git_hub.log.log import loggers\n  File \"E:\\cheshi\\git_hub\\log\\log.py\", line 16, in <module>\n    fh=logging.FileHandler(log_file,mode='a',encoding='utf-8')\n  File \"D:\\python\\lib\\logging\\__init__.py\", line 1146, in __init__\n    StreamHandler.__init__(self, self._open())\n  File \"D:\\python\\lib\\logging\\__init__.py\", line 1175, in _open\n    return open(self.baseFilename, self.mode, encoding=self.encoding,\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\log\\\\log.txt'\n\n"
+                "  File \"E:\\cheshi\\git_hub\\test_cases\\test_page1.py\", line 39, in test_1\n    user_list=ReadWrite().excelread('users')\n",
+                "  File \"E:\\cheshi\\git_hub\\data\\data.py\", line 32, in excelread\n    wb=openpyxl.load_workbook(self.excelpath)\n",
+                "  File \"D:\\python\\lib\\site-packages\\openpyxl\\reader\\excel.py\", line 315, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n",
+                "  File \"D:\\python\\lib\\site-packages\\openpyxl\\reader\\excel.py\", line 124, in __init__\n    self.archive = _validate_archive(fn)\n",
+                "  File \"D:\\python\\lib\\site-packages\\openpyxl\\reader\\excel.py\", line 96, in _validate_archive\n    archive = ZipFile(filename, 'r')\n",
+                "  File \"D:\\python\\lib\\zipfile.py\", line 1239, in __init__\n    self.fp = io.open(file, filemode)\n",
+                "FileNotFoundError: [Errno 2] No such file or directory: '/log/log.txt/data/test.xlsx'\n"
             ]
         }
     ],
     "testName": "系统登录的测试报告",
     "testAll": 1,
     "testFail": 1,
-    "beginTime": "2022-04-09 13:21:01",
-    "totalTime": "0s",
+    "beginTime": "2022-04-09 13:30:43",
+    "totalTime": "7s",
     "testSkip": 0,
     "testError": 0
 };
